@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#111111"><meta name="description" content="VELOR — Streetwear elevado. Descubra a coleção.">
+<title>VELOR — Streetwear, Elevated</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="topline">FRETE GRÁTIS EM PEDIDOS ACIMA DE R$ 499 <span>•</span> DROP 001 / 2026</div>
+<header class="header">
+  <button class="mobile-menu" id="mobileMenu" aria-label="Abrir menu">☰</button>
+  <a class="logo" href="#">VELOR<span>®</span></a>
+  <nav id="nav"><a href="#shop">LOJA</a><a href="#campaign">CAMPANHA</a><a href="#story">NOSSA VISÃO</a></nav>
+  <div class="head-actions"><button id="searchToggle" class="search-toggle" aria-label="Buscar">⌕</button><button id="cartOpen" class="bag-button">BOLSA <span id="bagCount">0</span></button></div>
+</header>
+<main>
+<section class="hero">
+ <div class="hero-bg"></div><div class="hero-grain"></div>
+ <div class="hero-meta"><span>VLR — OBJECTS OF DESIRE</span><span>EST. MMXXVI / BRASIL</span></div>
+ <div class="hero-copy"><p class="kicker">NEW SEASON / NEW PERSPECTIVE</p><h1>OWN<br>YOUR<br><i>SPACE.</i></h1><p class="hero-sub">Uma nova expressão do streetwear.<br>Feito para quem não precisa pedir espaço.</p><a class="circle-cta" href="#shop">EXPLORAR<br>COLEÇÃO <b>↘</b></a></div>
+ <div class="hero-caption"><span>01 / THE AFTER DARK COLLECTION</span><span>FORM FOLLOWS ATTITUDE.</span></div>
+ <div class="hero-index">001 — 012</div>
+</section>
+<div class="marquee"><div>VELOR® &nbsp; STREETWEAR ELEVADO &nbsp; VELOR® &nbsp; STREETWEAR ELEVADO &nbsp; VELOR® &nbsp; STREETWEAR ELEVADO &nbsp;</div></div>
+<section class="shop section" id="shop">
+ <div class="section-top"><div><p class="kicker dark">CURATED FOR YOU / 001</p><h2>THE NEW<br><i>STANDARD.</i></h2></div><p class="section-description">Peças de presença. Silhuetas precisas.<br>Uma coleção feita para atravessar tendências.</p></div>
+ <div class="toolbar"><div class="filters" id="filters"><button class="filter active" data-filter="all">TUDO <small>12</small></button><button class="filter" data-filter="outerwear">JAQUETAS</button><button class="filter" data-filter="tops">CAMISETAS</button><button class="filter" data-filter="bottoms">CALÇAS</button><button class="filter" data-filter="accessories">ACESSÓRIOS</button></div><label class="searchbox" id="searchBox"><span>⌕</span><input id="searchInput" placeholder="Buscar peça..." aria-label="Buscar produtos"></label></div>
+ <div class="product-grid" id="productGrid"></div>
+</section>
+<section class="campaign" id="campaign"><img src="https://images.unsplash.com/photo-1523398002811-999ca8dec234?auto=format&fit=crop&w=2000&q=88" alt="Editorial de moda urbana"><div class="campaign-shade"></div><div class="campaign-label">VELOR CAMPAIGN / 001</div><div class="campaign-copy"><p class="kicker">NOT MADE TO BLEND IN</p><h2>LESS NOISE.<br><i>MORE PRESENCE.</i></h2><a href="#shop">DESCUBRA A COLEÇÃO ↗</a></div><div class="campaign-foot">THE AFTER DARK COLLECTION — 2026</div></section>
+<section class="story section" id="story"><p class="kicker">A STUDY IN CONTRAST</p><h2>NOT JUST WHAT<br>YOU <i>WEAR.</i><br>WHO YOU <i>ARE.</i></h2><p>VELOR é uma visão contemporânea do vestir. Design essencial, atitude sem excesso e peças pensadas para acompanhar o seu próprio ritmo.</p><a href="#shop" class="underlink">CONHEÇA A COLEÇÃO <span>↗</span></a><div class="story-mark">V.</div></section>
+</main>
+<footer><a class="logo" href="#">VELOR<span>®</span></a><span>BUILT ON ATTITUDE.</span><span>© 2026 VELOR STUDIO</span></footer>
+
+<div class="overlay" id="overlay"></div>
+<aside class="drawer" id="cartDrawer" aria-label="Carrinho">
+ <div class="drawer-head"><div><p class="kicker dark">YOUR SELECTION</p><h2>SUA BOLSA <small id="drawerCount">0 ITENS</small></h2></div><button class="x" id="cartClose">×</button></div>
+ <div class="cart-list" id="cartList"></div>
+ <div class="drawer-bottom"><div class="total-line"><span>SUBTOTAL</span><strong id="subtotal">R$ 0,00</strong></div><p>Frete e prazo serão confirmados no atendimento.</p><button class="primary-btn" id="checkoutStart">CONTINUAR <span>↗</span></button></div>
+</aside>
+
+<div class="modal-wrap" id="productModal"><div class="product-modal"><button class="x modal-x" data-close="productModal">×</button><div id="productModalContent"></div></div></div>
+<div class="modal-wrap" id="checkoutModal"><div class="checkout-modal"><button class="x modal-x" data-close="checkoutModal">×</button><p class="kicker dark">FINALIZAÇÃO / ENTREGA</p><h2>PARA ONDE<br><i>VAI SEU PEDIDO?</i></h2><form id="addressForm">
+ <label>Nome completo<input name="name" required autocomplete="name" placeholder="Como podemos te chamar?"></label>
+ <label>Rua / Avenida<input name="street" required autocomplete="street-address" placeholder="Nome da rua"></label>
+ <div class="form-two"><label>Número<input name="number" required placeholder="Nº"></label><label>Complemento <small>(opcional)</small><input name="complement" placeholder="Apto, bloco..."></label></div>
+ <div class="form-two"><label>Bairro<input name="district" required placeholder="Seu bairro"></label><label>Cidade<input name="city" required autocomplete="address-level2" placeholder="Sua cidade"></label></div>
+ <label>Referência para entrega <small>(opcional)</small><input name="reference" placeholder="Perto de..."></label>
+ <div class="checkout-total"><span>TOTAL DOS PRODUTOS</span><strong id="checkoutSubtotal">R$ 0,00</strong></div>
+ <button class="primary-btn" type="submit">SALVAR ENDEREÇO E REVISAR <span>↗</span></button>
+ </form><div class="whatsapp-note" id="whatsappNote" hidden>Endereço salvo! O canal de WhatsApp da VELOR ainda será configurado. Seu pedido está preparado para revisão, sem envio automático.</div></div></div>
+<script src="script.js"></script>
+</body></html>
